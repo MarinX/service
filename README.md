@@ -1,17 +1,17 @@
-#Golang service handler
+# Go service handler
 
-#Description
+# Description
 Simple service handler for catching OS signal
 
-#Installation
+# Installation
     go get github.com/MarinX/service
-#Notes
+# Notes
 * Your process/service must implement OnStart() / OnStop() methods
 * service.Run() will call OnStart() and block until kill signal
 * After kill signal, OnStop() will be called and program will exit when all service/process are exited
 
 
-#Example
+# Example
     // main
     package main
 
@@ -53,7 +53,8 @@ Simple service handler for catching OS signal
 	    time.Sleep(2 * time.Second)
     }
 
-#License
+# License
 This library is under the MIT License
-#Author
+
+# Author
 Marin Basic 
